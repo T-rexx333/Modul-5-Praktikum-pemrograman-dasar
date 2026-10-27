@@ -1,0 +1,23 @@
+#include <stdio.h> 
+//Buatlah Function Disini 
+int MaxNumber(int a, int b, int c, int d){
+int m = a;
+if (b > m) {
+    m = b;
+}
+if (c > m) {
+    m = c;
+}
+if(d > m) {
+    m = d;
+}
+return m;
+}
+
+int main() { 
+int a, b, c, d; 
+scanf("%d %d %d %d", &a, &b, &c, &d); 
+int result = MaxNumber(a, b, c, d); 
+printf("%d", result); 
+return 0; 
+}
